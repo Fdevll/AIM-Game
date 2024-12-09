@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>Color Game</h1>
+  <div class="score-time-container">
+    <table class="score-table">
+      <tr>
+        <th>Score:</th>
+        <td id="scores">0</td>
+      </tr>
+    </table>
+    <table class="time-table">
+      <tr>
+        <th>Time:</th>
+        <td id="timer">00:00</td>
+      </tr>
+    </table>
+  </div>
+  <form id="game-form">
+    <label for="difficulty-select">Difficulty:</label>
+    <select id="difficulty-select">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <br>
+    <label for="time-select">Time:</label>
+    <select id="time-select">
+      <option value="1">1 seconds</option>
+      <option value="10">10 seconds</option>
+      <option value="30">30 seconds</option>
+      <option value="60">1 minute</option>
+      <option value="300">5 minutes</option>
+      <option value="600">10 minutes</option>
+    </select>
+    <br>
+    <button type="submit" id="start-game">Start Game</button>
+  </form>
+  <div class="container" id="board">
+  
+</div>
+</body>
+</html>

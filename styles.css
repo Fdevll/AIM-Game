@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.score-time-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-table, .time-table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-table th, .time-table th {
+  text-align: left;
+  padding: 10px;
+  color: #666;
+}
+
+.score-table td, .time-table td {
+  padding: 10px;
+  text-align: right;
+  color: #333;
+}
+
+#scores, #timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#game-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#difficulty-select, #time-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#start-game {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#start-game:hover {
+  background-color: #3e8e41;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(87, 87, 87);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-time-container, #game-form, .container {
+  margin-bottom: 20px;
+}
+
+body {
+  padding: 20px;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  background: rgb(87, 87, 87);
+  border-radius: 20px;
+  margin: 1px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+#game-results {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#game-results th {
+  background-color: #f0f0f0;
+  width: calc(100% / 4);
+}
+
+#game-results td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  width: calc(100% / 3);
+
+}
+
+#game-results tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#game-results tr:hover {
+  background-color: #f2f2f2;
+}
